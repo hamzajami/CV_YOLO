@@ -1,2 +1,19 @@
-# CV_YOLO
-This notebook performs object detection using YOLOv5 (You Only Look Once v5) to identify and label vehicles in a given image. The model is pre-trained on the COCO dataset and uses PyTorch via torch.hub. The result is a processed image with bounding boxes and labels over detected vehicles.
+# YOLOv5 Vehicle Detection 🚗🚌🚚
+
+This Jupyter Notebook demonstrates how to use the YOLOv5 object detection model to detect vehicles (cars, trucks, buses, and motorbikes) in an image. It utilizes a pretrained YOLOv5 model from Ultralytics via `torch.hub`.
+
+## 🔍 Features
+
+- Loads YOLOv5s model (small, fast version) from Ultralytics.
+- Detects and labels vehicles from uploaded images.
+- Visualizes results using OpenCV and Matplotlib.
+- Allows download of annotated images directly in Google Colab.
+
+## 🛠️ Installation
+
+Run these in Google Colab to install dependencies:
+
+```bash
+!pip install torch torchvision torchaudio
+!pip install opencv-python matplotlib
+!pip install yolov5
